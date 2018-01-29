@@ -1,0 +1,15 @@
+footer {
+  background-color: #cfd9e0;
+  padding: 50px 20px;
+}
+
+footer p {
+  max-width: 900px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0px auto;
+}
+
+footer a {
+  color: #24226b;
+}

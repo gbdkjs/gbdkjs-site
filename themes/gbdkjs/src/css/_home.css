@@ -1,0 +1,64 @@
+section.homepage-landing {
+  background-color: #24226b;
+}
+
+section.homepage-landing canvas {
+  display: block;
+}
+
+section.homepage-landing h1 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  transform: translate(0, -50%);
+  pointer-events: none;
+  mix-blend-mode: screen;
+
+  text-shadow: 0px 0px 100px #ff0, 0px 0px 20px #ff0, 0px 0px 3px #330; 
+  color: #ff0;
+  z-index: 100;
+  margin: 0px;
+  font-size: 2em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-weight: 300;
+  font-style: italic;  
+}
+
+section.homepage-landing h1 .gb {
+  font-weight: 800;
+  font-size: 4em;
+  line-height: 100px;
+  padding-right: 10px;
+}
+
+section.homepage-landing h1 .bad {
+  display: inline-block;
+  font-weight: 500;
+  transform: translate(-70px, 20px);
+} 
+
+section.homepage-landing h1 .gb span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+}
+
+section.homepage-landing h1 .web {
+  display: inline-block;
+  font-weight: 500;
+  transform: translate(133px, 0px);
+}
+
+@media (max-width: 700px) {
+  section.homepage-landing h1 .bad {
+    transform: translate(14px, 10px);
+  } 
+  section.homepage-landing h1 .gb span {
+    display: block;
+  }
+  section.homepage-landing h1 .web {
+    transform: translate(63px, 30px);
+  }
+}
