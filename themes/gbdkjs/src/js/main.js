@@ -123,8 +123,6 @@ function render() {
   gl.enable(gl.BLEND);
   gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
 
-  // gl.blendFunc(gl.GL_ONE_MINUS_SRC_ALPHA, gl.GL_SRC_ALPHA);
-
   // Clear the screen and set the viewport before
   // drawing anything
   clear(gl);
@@ -198,11 +196,19 @@ function render() {
 }
 
 // Resize the canvas to fit the screen
-
-function resizeCanvas() {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight - 72;
+var scrollTimer = 0;
+function scrollCanvas() {
+  scrollTimer = Date.now();
+  document.body.style.margin = 50;
 }
 
+function resizeCanvas() {
+  if(scrollTimer + 300 < Date.now()) {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight - 72;
+  }
+}
+
+window.addEventListener("scroll", scrollCanvas, false);
 window.addEventListener("resize", resizeCanvas, false);
 resizeCanvas();

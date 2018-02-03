@@ -17,11 +17,11 @@ varying vec3 vColor;
 varying vec2 uv;
 
 float axisLine(float pos) {
-    return (40. * cos(pos * (2.*M_PI*60.))) - 39.;
+  return (40. * cos(pos * (2.*M_PI*60.))) - 39.;
 }
 
 float grid(vec2 pos) {
-    return max(axisLine(pos.x), axisLine(pos.y));
+  return max(axisLine(pos.x), axisLine(pos.y));
 }
 
 void main() {
@@ -33,16 +33,6 @@ void main() {
 
   vec4 grid_color = mix(FOG_COLOR, GRID_COLOR, max(0.,1.0-fog_cord));
 
-  //gl_FragColor = vec4(vColor, 1.0);
-  //gl_FragColor = vec4(uv,1.0,1.0);
-  //gl_FragColor = mix(BLACK, grid_color, grid(uv));
-  //gl_FragColor = vec4(1.,1.,0.,0.5);
-
-  //gl_FragColor = vec4(fog_cord,1.,1.,1.);
-
-  //gl_FragColor = vec4(uv.y<0.001?1.:0.,0.,0.,1.);
-  //gl_FragColor = vec4(uv.y>0.99?1.:0.,0.,0.,1.);
-
   gl_FragColor = vec4(1.,0.,0.,1.);
 
   color = mix(BLUE, BLUE, smoothstep(0.0, 0.1, uv.x));
@@ -53,5 +43,4 @@ void main() {
   color = mix(color, BLUE, smoothstep(0.9, 1.0, uv.x));
 
   gl_FragColor = color;
-
 }

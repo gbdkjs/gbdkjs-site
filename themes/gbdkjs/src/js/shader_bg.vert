@@ -11,7 +11,6 @@ varying vec3 vColor;
 varying vec2 uv;
 
 void main() {
-//  gl_Position = uProjection * uModelView * vec4(aPosition, 1.0);
   gl_Position = vec4(aPosition, 1.0);
 
   vColor = aColor;
