@@ -4,7 +4,15 @@ nav {
   overflow: hidden;
 }
 
-nav div {
+nav #menu_open {
+  display: none;
+}
+
+nav #hamburger {
+  display: none;
+}
+
+nav .container {
   max-width: 900px;
   padding: 0px 20px;
   box-sizing: border-box;
@@ -25,8 +33,11 @@ nav .title {
   text-decoration: none;
 }
 
+nav .nav_right {
+  float: right;  
+}
+
 nav ul {
-  float: right;
   display: block;
   text-align: right;
   list-style-type: none;
@@ -54,4 +65,64 @@ nav ul li a {
 
 nav ul li a:hover {
   background: rgba(157, 168, 185, 0.8);
+}
+
+@media (max-width: 700px) {
+
+  nav #hamburger {
+    display: block;
+    padding: 21px;
+    margin-right: -21px;   
+    fill: #24226b;
+  }  
+
+  nav svg {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+  }
+
+/*  nav #menu_open ~ span ul {
+    display: none;
+  }*/
+
+  nav #menu_open:checked ~ span .menufade {
+    background-color: rgba(0,0,0,.0);
+    transition: background-color 0.3s linear;
+  }
+
+  nav #menu_open:checked ~ span .menufade {
+    background-color: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 999;
+  }
+
+  nav #menu_open ~ span ul {
+    right: -300px;
+    opacity: 0;
+    position: absolute;
+    display: block;    
+    z-index: 1000;
+    top: 0px;
+    width: 300px;
+    height: 100%;
+    background-color: #acb4c1;    
+    transition: all 0.3s linear;
+  }
+
+  nav #menu_open:checked ~ span ul {
+    opacity: 1;
+    right: 0px;
+  }
+  nav #menu_open ~ span ul li {
+    display: block;
+    text-align: left;
+  }
+  nav #menu_open ~ span ul li a {
+    display: block;
+  }
 }
