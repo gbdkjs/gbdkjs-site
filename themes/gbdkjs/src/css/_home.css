@@ -1,6 +1,6 @@
 section.homepage-landing {
   background-color: #24226b;
-  margin-bottom: 60px;
+  margin-bottom: 0px;
 }
 
 section.homepage-landing canvas {
@@ -84,6 +84,7 @@ section.homepage-right div.homepage-center {
 
 div.homepage-center p {
   padding-right: 50px;
+  margin-bottom: 40px;
 }
 
 section.homepage-right div {
@@ -98,6 +99,23 @@ section.homepage-right img {
   max-width: 300px;
 }
 
+.button {
+  display: inline-block;
+  border: 3px solid #c92c61;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #c92c61;
+  font-size: 1.1em;
+  padding: 10px 20px;
+  transition: color 0.3s linear, background-color 0.3s linear;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #c92c61;
+  color: #ffffff;
+}
+
 @media (max-width: 700px) {
   section.homepage-landing h1 .bad {
     transform: translate(14px, 10px);
@@ -107,5 +125,21 @@ section.homepage-right img {
   }
   section.homepage-landing h1 .web {
     transform: translate(63px, 30px);
+  }
+
+  section.homepage-left,
+  section.homepage-right {
+    display: block;
+  }
+
+  section.homepage-left div.homepage-center,
+  section.homepage-right div.homepage-center {
+    width: 100%;
+    /*text-align: center;*/
+    align-items: center;
+  }
+
+  div.homepage-center p {
+    padding-right: 0px;
   }
 }

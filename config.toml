@@ -16,9 +16,9 @@ theme = "gbdkjs"
 [[menu.main]]
     name = "Download"
     title = "Download"
-    url = "/download/"
+    url = "/docs/installation/"
 
 [[menu.main]]
     name = "GitHub"
     title = "GitHub"
-    url = "https://github.com/chrismaltby"
+    url = "https://github.com/gbdkjs"

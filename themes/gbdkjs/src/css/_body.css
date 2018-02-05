@@ -11,6 +11,7 @@ body {
 h1 {
   font-weight: 300;
   color: #c92c61;
+  font-size: 2em;
 }
 
 h2 {
@@ -22,6 +23,16 @@ h2 {
 p {
   font-family: Georgia, serif;
   color: #333;
-  line-height: 1.8;
-  font-size: 1.3em;
+  line-height: 1.6;
+  font-size: 1.1em;
+}
+
+ul {
+  font-family: Georgia, serif;
+  line-height: 1.6;
+  font-size: 1.1em;
+}
+
+a {
+  color: #c92c61;
 }

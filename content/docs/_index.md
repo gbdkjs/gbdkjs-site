@@ -1,5 +1,5 @@
 ---
-title: "TEST POST"
+title: "Documentation"
 date: 2018-01-28T14:14:44Z
 draft: false
 ---
@@ -9,4 +9,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue tortor eget e
 
 - [Installation](installation)
 - [Getting Started](getting-started)
+- [Graphics with GGBGFX](ggbgfx)
+- [Debug Environment](debug)
 - [API Reference](api)

@@ -1,4 +1,4 @@
-import styles from './../css/main.css';
+import styles from "./../css/main.css";
 
 var canvas = document.getElementById("header");
 var clear = require("gl-clear")({ color: [0, 0, 0, 1] });
@@ -6,18 +6,16 @@ var gl = require("gl-context")(canvas, render);
 var now = require("right-now");
 var glBuffer = require("gl-buffer");
 var mat4 = require("gl-mat4");
-var glShader = require('gl-shader')
-var glslify  = require('glslify')
+var glShader = require("gl-shader");
+var glslify = require("glslify");
 
-var shader = glShader(gl,
-  require('./shader.vert'),
-  require('./shader.frag')
-)
+var shader = glShader(gl, require("./shader.vert"), require("./shader.frag"));
 
-var shaderBg = glShader(gl,
-  require('./shader_bg.vert'),
-  require('./shader_bg.frag')
-)
+var shaderBg = glShader(
+  gl,
+  require("./shader_bg.vert"),
+  require("./shader_bg.frag")
+);
 
 var time = 0;
 
@@ -115,6 +113,7 @@ function animate() {
 }
 
 function render() {
+  return;
   var width = gl.drawingBufferWidth;
   var height = gl.drawingBufferHeight;
 
@@ -203,7 +202,7 @@ function scrollCanvas() {
 }
 
 function resizeCanvas() {
-  if(scrollTimer + 300 < Date.now()) {
+  if (scrollTimer + 300 < Date.now()) {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight - 72;
   }
