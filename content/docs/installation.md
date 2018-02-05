@@ -3,8 +3,86 @@ title: "Installation"
 date: 2018-01-28T14:14:44Z
 draft: false
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue tortor eget est molestie tempus. Pellentesque nibh libero, pulvinar non tincidunt quis, accumsan id augue. Donec tempor congue mi, suscipit elementum mi elementum vel. Aliquam lectus massa, iaculis aliquam viverra non, ornare ut ipsum. Nunc sollicitudin lacus augue, sit amet fermentum urna pretium id. Nunc rhoncus, erat sed eleifend rutrum, neque est ultrices nunc, vel condimentum tortor magna sed velit. Nullam iaculis lacinia magna ac luctus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent efficitur venenatis rhoncus. In suscipit vulputate felis vitae commodo. Aliquam non fringilla mauris. Suspendisse potenti.
 
-## Mac OS
+To start using GBDK.js you'll need to have a few dependencies installed first.
 
-Ut felis lacus, sagittis non dolor aliquet, cursus hendrerit est. In vel lectus ut dui pharetra efficitur nec sit amet orci. Nunc sollicitudin, lacus vel vehicula interdum, augue turpis mollis justo, eu mollis diam tortor quis purus. Nam ultricies, nisl ac iaculis varius, lectus velit ornare nunc, eget volutpat sapien sapien eu ipsum. Vivamus vitae ultricies turpis. Donec a lorem a mi varius dapibus. In hendrerit felis nibh, ac fermentum eros fringilla ut. Donec faucibus justo id leo aliquam interdum. Quisque fringilla interdum elit, et gravida ipsum sagittis id. Nunc arcu urna, maximus a congue quis, egestas ut neque. Vestibulum auctor magna in dui cursus, sed placerat metus semper. Mauris a eros lacus. Phasellus sit amet laoreet libero. Fusce non eros magna.
+## GBDK
+
+GBDK, The GameBoy Developers Kit is a C library and compiler without which this
+project wouldn't exist. You can use it to compile from C directly to a GameBoy
+ROM file to be played in an emulator or directly on device using a USB
+cartridge.
+
+Download the latest release for your system at http://gbdk.sourceforge.net/.  
+Only Linux and Windows binary releases are available for download but you can
+[download for Mac OS here](/downloads/gbdk-mac.zip).
+
+Once you have the release, unarchive it, move it to a permanent location
+(such as /opt/gbdk) and add the bin folder to your `$PATH`.
+
+```
+> unzip gbdk-mac.zip
+> mv gbdk /opt/gbdk
+> PATH=/opt/gbdk/bin:$PATH
+```
+
+If you want to keep gbdk in your path add it to your `~/.bashrc` config.
+
+Once GBDK is installed you should be able to run `lcc -V` on a terminal to
+confirm it is set up correctly.
+
+```
+> lcc -v
+lcc $Id: lcc.c,v 1.6 2001/10/28 18:38:13 michaelh Exp $
+```
+
+## Emscripten
+
+Emscripten is an LLVM-to-JavaScript compiler. We're using it to compile from C
+code to Javascript and bind the GBDK library functions to a Javascript
+implementation allowing us to view the internal graphics memory buffers at any
+point during playback and to log straight to the Javascript console in the
+browser.
+
+Follow the installation instructions for your system at  
+http://kripken.github.io/emscripten-site/docs/getting_started/downloads.html
+
+Once Emscripten is installed you should be able to run `emcc -v` on a terminal
+to confirm it is set up correctly.
+
+```
+> emcc -v
+emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 1.37.28
+```
+
+## Node.js
+
+The GBDK.js tools are built using Node.js and our Javascript implementation of
+the GBDK library is distributed via npm so you'll need Node.js installed also.
+Get the latest release at https://nodejs.org and confirm installation using
+`node -v`.
+
+```
+> node -v
+v8.9.4
+```
+
+## GBDK.js
+
+Once the above is installed you'll be able to get the latest version of GBDK.js
+using npm.
+
+```
+> mkdir my-awesome-game
+> cd my-awesome-game
+> npm init
+> npm install gbdkjs
+```
+
+This will create a `node_modules/gbdkjs` folder in your current path containing
+the GBDK Javasript implementation, the Emscripten bindings and a shell HTML file.
+
+If you've used Emscripten before this might be enough for you to get started but
+assuming you haven't we suggest you now download an [example project](/docs/getting-started) to get
+started.
+

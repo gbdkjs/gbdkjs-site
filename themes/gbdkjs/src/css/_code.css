@@ -1,17 +1,24 @@
-pre, .pre  {
+pre,
+.pre {
   overflow-x: auto;
   overflow-y: hidden;
-  overflow:   scroll;
+  overflow: scroll;
 }
 
+code {
+  background-color: #f3f3f3;
+  border-radius: 4px;
+  padding: 4px;
+}
 
 pre  code {
   display: block;
   padding: 1.5em 1.5em;
   white-space: pre;
-  font-size: .875rem;
+  font-size: 1rem;
   line-height: 2;
-
+  background-color: transparent;
+  border-radius: 0;
 }
 
 pre {
@@ -21,4 +28,5 @@ pre {
 
   hyphens: none;
   position: relative;
+  border-radius: 4px;
 }
