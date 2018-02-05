@@ -109,7 +109,8 @@ nav ul li a:hover {
     display: block;
     z-index: 1000;
     top: 0px;
-    width: 300px;
+    width: 0px;
+    overflow: hidden;
     height: 100%;
     background-color: #acb4c1;
     transition: all 0.3s linear;
@@ -118,6 +119,7 @@ nav ul li a:hover {
   nav #menu_open:checked ~ span ul {
     opacity: 1;
     right: 0px;
+    width: 300px;
   }
   nav #menu_open ~ span ul li {
     display: block;
