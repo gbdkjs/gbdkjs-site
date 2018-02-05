@@ -67,6 +67,7 @@ section.homepage-right {
 section.homepage-left h2,
 section.homepage-right h2 {
   font-size: 2em;
+  margin: 1em 0;
 }
 
 section.homepage-left div.homepage-center,
