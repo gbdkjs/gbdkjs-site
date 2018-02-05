@@ -180,7 +180,7 @@ function render() {
   // Bind the shader
   shader.bind();
   shader.uniforms.uProjection = projectionMatrix;
-  shader.uniforms.uTime = currTime;
+  shader.uniforms.uTime = currTime / 1000;
 
   // Draw the square
   shader.uniforms.uModelView = squareMatrix;

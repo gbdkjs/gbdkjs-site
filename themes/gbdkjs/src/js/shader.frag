@@ -30,7 +30,7 @@ void main() {
   float fog_cord = (gl_FragCoord.z / gl_FragCoord.w) / perspective_far;
 
   vec4 grid_color = mix(FOG_COLOR, GRID_COLOR, max(0.,1.0-fog_cord));
-  vec4 line_color = mix(BLACK, GRID_COLOR, grid(vec2(uv.x - (uTime/11000.),uv.y)));
+  vec4 line_color = mix(BLACK, GRID_COLOR, grid(vec2(uv.x - (uTime/81.),uv.y)));
 
   gl_FragColor = mix(FOG_COLOR, line_color, max(0.,1.0-fog_cord));
 }
