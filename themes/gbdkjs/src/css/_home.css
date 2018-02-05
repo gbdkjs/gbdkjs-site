@@ -1,6 +1,6 @@
 section.homepage-landing {
   background-color: #24226b;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
 }
 
 section.homepage-landing canvas {
@@ -87,8 +87,8 @@ div.homepage-center p {
   margin-bottom: 40px;
 }
 
-section.homepage-right div {
-  /*float: right;*/
+.homepage-content {
+  width: 100%;
 }
 
 section.homepage-left img {

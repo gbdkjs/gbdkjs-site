@@ -113,7 +113,6 @@ function animate() {
 }
 
 function render() {
-  return;
   var width = gl.drawingBufferWidth;
   var height = gl.drawingBufferHeight;
 

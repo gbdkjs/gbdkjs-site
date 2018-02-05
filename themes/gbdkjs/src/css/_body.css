@@ -6,6 +6,8 @@ body {
 body {
   margin: 0px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {

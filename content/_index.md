@@ -3,7 +3,7 @@
     <img src="/img/deploy.png" />
   </div>
   <div class="homepage-center">
-    <div>
+    <div class="homepage-content">
       <h2>Deploy</h2>
       <p>Emscripten bindings to write once and deploy for Game Boy and the web.</p>
       <a class="button" href="/docs">View documentation</a>
@@ -16,7 +16,7 @@
     <img src="/img/convert.png" />
   </div>
   <div class="homepage-center">
-    <div>
+    <div class="homepage-content">
       <h2>Convert</h2>
       <p>CLI Tools for converting images to the Game Boy formats.</p>
       <a class="button" href="/docs/ggbgfx">View tools</a>      
@@ -29,7 +29,7 @@
     <img src="/img/debug.png" />
   </div>
   <div class="homepage-center">
-    <div>
+    <div class="homepage-content">
       <h2>Debug</h2>
       <p>Inspect the graphics memory buffers and log values to the JS console.</p>
       <a class="button" href="/docs/debug">Start debugging</a>            
@@ -42,7 +42,7 @@
     <img src="/img/examples.png" />
   </div>
   <div class="homepage-center">
-    <div>
+    <div class="homepage-content">
       <h2>Getting Started</h2>
       <p>Example projects to get started right away.</p>
       <a class="button" href="/docs/getting-started">View examples</a>                  

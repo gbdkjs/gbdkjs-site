@@ -1,16 +1,14 @@
 footer {
-  background-color: #cfd9e0;
+  background-color: #f1f1f3;
   padding: 50px 20px;
   clear: both;
 }
 
 footer p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   max-width: 900px;
   padding: 20px;
   box-sizing: border-box;
   margin: 0px auto;
-}
-
-footer a {
-  color: #24226b;
+  color: #333;
 }
