@@ -4,7 +4,7 @@ date: 2018-01-28T14:14:44Z
 draft: false
 ---
 
-When developing for the Game Boy all graphics data needs to be in specific binary format. All Game Boy graphics are tile based with an 8x8 pixel size, you specify a tile set to use and then provide a tile map to determine which tiles to display where in the screen buffer.
+When developing for the Game Boy all graphics data needs to be in specific binary format. Graphics for the Game Boy are tile based with an 8x8 pixel size. You specify a tile set to use and then provide a tile map to determine which tiles to display where in the screen buffer.
 
 To simplify the process of converting assets into a compatible format you can use the GGBGFX command line tool.
 
