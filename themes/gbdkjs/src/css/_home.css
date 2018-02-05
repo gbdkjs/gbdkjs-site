@@ -1,5 +1,6 @@
 section.homepage-landing {
   background-color: #24226b;
+  margin-bottom: 60px;
 }
 
 section.homepage-landing canvas {
@@ -16,14 +17,14 @@ section.homepage-landing h1 {
   pointer-events: none;
   mix-blend-mode: screen;
 
-  text-shadow: 0px 0px 100px #ff0, 0px 0px 20px #ff0, 0px 0px 3px #330; 
+  text-shadow: 0px 0px 100px #ff0, 0px 0px 20px #ff0, 0px 0px 3px #330;
   color: #ff0;
   z-index: 100;
   margin: 0px;
   font-size: 2em;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   font-weight: 300;
-  font-style: italic;  
+  font-style: italic;
 }
 
 section.homepage-landing h1 .gb {
@@ -37,7 +38,7 @@ section.homepage-landing h1 .bad {
   display: inline-block;
   font-weight: 500;
   transform: translate(-70px, 20px);
-} 
+}
 
 section.homepage-landing h1 .gb span {
   display: inline-block;
@@ -51,10 +52,56 @@ section.homepage-landing h1 .web {
   transform: translate(133px, 0px);
 }
 
+section.homepage-left,
+section.homepage-right {
+  clear: both;
+  margin-bottom: 20px;
+  display: flex;
+  /*font-size: 1.2em;*/
+}
+
+section.homepage-right {
+  flex-direction: row-reverse;
+}
+
+section.homepage-left h2,
+section.homepage-right h2 {
+  font-size: 2em;
+}
+
+section.homepage-left div.homepage-center,
+section.homepage-right div.homepage-center {
+  width: 50%;
+  /*float: left;*/
+  padding: 20px;
+  box-sizing: border-box;
+  /*background-color: #ccc;*/
+  display: flex;
+  justify-content: center;
+  /*align-items: center;*/
+  flex-direction: column;
+}
+
+div.homepage-center p {
+  padding-right: 50px;
+}
+
+section.homepage-right div {
+  /*float: right;*/
+}
+
+section.homepage-left img {
+  max-width: 300px;
+}
+
+section.homepage-right img {
+  max-width: 300px;
+}
+
 @media (max-width: 700px) {
   section.homepage-landing h1 .bad {
     transform: translate(14px, 10px);
-  } 
+  }
   section.homepage-landing h1 .gb span {
     display: block;
   }
