@@ -7,6 +7,18 @@ draft: false
 The GBDK.js web environment gives you access to a number of tools for viewing 
 internal state and debugging your game.
 
+## Keyboard Controls
+
+The controls are currently set up to mimic the default keyboard controls in
+[KiGB](http://www.bannister.org/software/kigb.htm) though these will likely be
+configurable in a later version.
+
+- **Arrow Keys** - D-pad movement
+- **Alt Key** - A Button
+- **Ctrl Key** - B Button
+- **Shift Key** - Select Button
+- **Enter Key** - Start Button
+
 ## Buffers
 
 The screen buffer and window buffer panels allow you to see the entire state of
