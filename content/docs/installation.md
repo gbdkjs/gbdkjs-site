@@ -67,6 +67,11 @@ Get the latest release at https://nodejs.org and confirm installation using
 v8.9.4
 ```
 
+## A GameBoy Emulator
+
+To play your ROM files you'll need an emulator such as [OpenEmu](http://openemu.org/). I find for during development that I prefer [KiGB (Mac Version)](http://www.bannister.org/software/kigb.htm) as using `open romfile.gb` on the
+command line quickly reloads the application.
+
 ## GBDK.js
 
 Once the above is installed you'll be able to get the latest version of GBDK.js
@@ -82,7 +87,6 @@ using npm.
 This will create a `node_modules/gbdkjs` folder in your current path containing
 the GBDK Javasript implementation, the Emscripten bindings and a shell HTML file.
 
-If you've used Emscripten before this might be enough for you to get started but
-assuming you haven't we suggest you now download an [example project](/docs/getting-started) to get
-started.
-
+If you've used Emscripten before this might be all you need but assuming you 
+haven't we suggest you now download an [example project](/docs/getting-started)
+to get started.
