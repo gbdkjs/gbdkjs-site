@@ -14,9 +14,7 @@ To simplify the process of converting assets into a compatible format you can us
 npm install -g ggbgfx-cli
 ```
 
-## Commands
-
-### Sprite
+## Sprite Command
 
 Convert PNG into sprite data
 
@@ -30,7 +28,7 @@ ggbgfx sprite
 ggbgfx sprite -b 5 -o sprite_data.c sprite_image.png
 ```
 
-### Tileset
+## Tileset Command
 
 Convert one or more PNGs into a tileset PNG containing all unique tiles.
 
@@ -44,7 +42,7 @@ ggbgfx tileset
 ggbgfx tileset -o city_tiles.png city1.png city2.png
 ```
 
-### Tilemap
+## Tilemap Command
 
 Convert a source PNG and a tileset PNG into a tilemap data.
 
@@ -58,7 +56,7 @@ ggbgfx tilemap
 ggbgfx tilemap -b 6 -o city1_tilemap.c -t city_tiles.png city1.png 
 ```
 
-### Tiledata
+## Tiledata Command
 
 Convert a source PNG into tile data
 
