@@ -39,3 +39,7 @@ ul {
 a {
   color: #c92c61;
 }
+
+img {
+  max-width: 100%;
+}
