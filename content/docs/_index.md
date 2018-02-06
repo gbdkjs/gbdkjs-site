@@ -10,3 +10,4 @@ draft: false
 - [Graphics with GGBGFX](ggbgfx)
 - [Debug Environment](debug)
 - [API Reference](api)
+- Further reading at [Awesome Game Boy Development](https://github.com/avivace/awesome-gbdev)
