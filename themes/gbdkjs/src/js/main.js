@@ -8,6 +8,7 @@ var glBuffer = require("gl-buffer");
 var mat4 = require("gl-mat4");
 var glShader = require("gl-shader");
 var glslify = require("glslify");
+require("smoothscroll-polyfill").polyfill();
 
 var shader = glShader(gl, require("./shader.vert"), require("./shader.frag"));
 
@@ -207,6 +208,20 @@ function resizeCanvas() {
   }
 }
 
+function scrollPastHeader(e) {
+  e.preventDefault();
+  window.scroll({
+    top: window.innerHeight,
+    left: 0,
+    behavior: "smooth"
+  });
+  return false;
+}
+
 window.addEventListener("scroll", scrollCanvas, false);
 window.addEventListener("resize", resizeCanvas, false);
+document
+  .getElementById("headerNext")
+  .addEventListener("click", scrollPastHeader);
+
 resizeCanvas();

@@ -117,6 +117,42 @@ section.homepage-right img {
   color: #ffffff;
 }
 
+#headerNext {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  /*background-color: blue;*/
+  width: 200px;
+  height: 100px;
+  background-image: url("/img/next.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transform: translate(-50%, 0) rotate(90deg) scale(0.5);
+  animation: MoveUpDown 3s ease-in-out infinite;
+}
+
+@keyframes MoveUpDown {
+  0% {
+    bottom: 0;
+  }
+  60% {
+    bottom: 0;
+  }
+  70% {
+    bottom: 10px;
+  }
+  80% {
+    bottom: 0;
+  }
+  90% {
+    bottom: 10px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
 @media (max-width: 700px) {
   section.homepage-landing h1 .bad {
     transform: translate(14px, 10px);
