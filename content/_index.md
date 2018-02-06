@@ -1,6 +1,6 @@
 <section class="homepage-right">
   <div class="homepage-center">
-    <img src="/img/deploy.png" />
+    <a href="/docs" title="View documentation"><img src="/img/deploy.png" /></a>
   </div>
   <div class="homepage-center">
     <div class="homepage-content">
@@ -13,7 +13,7 @@
 
 <section class="homepage-left">
   <div class="homepage-center">
-    <img src="/img/convert.png" />
+    <a href="/docs/ggbgfx" title="View tools"><img src="/img/convert.png" /></a>
   </div>
   <div class="homepage-center">
     <div class="homepage-content">
@@ -26,7 +26,7 @@
 
 <section class="homepage-right">
   <div class="homepage-center">
-    <img src="/img/debug.png" />
+    <a href="/docs/debug" title="Start debugging"><img src="/img/debug.png" /></a>
   </div>
   <div class="homepage-center">
     <div class="homepage-content">
@@ -39,7 +39,7 @@
 
 <section class="homepage-left">
   <div class="homepage-center">
-    <img src="/img/examples.png" />
+    <a href="/docs/getting-started" title="View examples"><img src="/img/examples.png" /></a>
   </div>
   <div class="homepage-center">
     <div class="homepage-content">
