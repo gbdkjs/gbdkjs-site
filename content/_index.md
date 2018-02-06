@@ -5,7 +5,7 @@
   <div class="homepage-center">
     <div class="homepage-content">
       <h2>Deploy</h2>
-      <p>Emscripten bindings to write once and deploy for Game Boy and the web.</p>
+      <p>Emscripten bindings to write once and deploy for GameBoy and the web.</p>
       <a class="button" href="/docs">View documentation</a>
     </div>
   </div>
@@ -18,7 +18,7 @@
   <div class="homepage-center">
     <div class="homepage-content">
       <h2>Convert</h2>
-      <p>CLI Tools for converting images to the Game Boy formats.</p>
+      <p>CLI Tools for converting images into the GameBoy graphics format.</p>
       <a class="button" href="/docs/ggbgfx">View tools</a>      
     </div>
   </div>
