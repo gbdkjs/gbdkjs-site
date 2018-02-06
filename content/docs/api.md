@@ -5,7 +5,7 @@ draft: false
 ---
 
 GBDK.js isn't yet a full implementation of the GBDK C library. If it isn't in
-one of our example projects, chances are we haven't implementated the
+one of our example projects, chances are we haven't implemented the
 functionality but we're getting to it (e.g. No GameBoy Color support and not
 much support for banks yet)
 

@@ -85,7 +85,7 @@ using npm.
 ```
 
 This will create a `node_modules/gbdkjs` folder in your current path containing
-the GBDK Javasript implementation, the Emscripten bindings and a shell HTML file.
+the GBDK Javascript implementation, the Emscripten bindings and a shell HTML file.
 
 If you've used Emscripten before this might be all you need but assuming you 
 haven't we suggest you now download an [example project](/docs/getting-started)
