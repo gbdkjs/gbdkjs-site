@@ -38,7 +38,7 @@ screen and window buffers) and sprite memory. This allows you to see if you've
 loaded too much or too little graphics data or if you've loaded the data into
 the wrong location.
 
-## Logging Console
+## Logging to the Console
 
 The right hand side of the page contains a log for you to output debugging
 information from your game directly to the page. You will also be able to see
