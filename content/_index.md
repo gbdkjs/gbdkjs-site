@@ -31,7 +31,7 @@
   <div class="homepage-center">
     <div class="homepage-content">
       <h2>Debug</h2>
-      <p>Inspect the graphics memory buffers and log values to the JS console.</p>
+      <p>Inspect the graphics memory buffers and log values to the Javascript console.</p>
       <a class="button" href="/docs/debug">Start debugging</a>            
     </div>
   </div>

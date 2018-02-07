@@ -9,7 +9,7 @@ internal state and debugging your game.
 
 ![](/img/debug-environment.png)
 
-<a href="/examples/boilerplate/web/" class="button">Launch Debug</a>
+<a href="/examples/boilerplate/web/" class="button">Launch debug</a>
 
 ## Keyboard Controls
 

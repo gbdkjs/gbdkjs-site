@@ -9,7 +9,7 @@ draft: false
 A simple example displaying a scrolling backround image, a single sprite with
 joypad controlled movement and logging when pressing A, B, Start or Select.
 
-<a href="/examples/boilerplate/web/" class="button">Launch Debug</a>
+<a href="/examples/boilerplate/web/" class="button">Launch debug</a>
 
 ![](/img/boilerplate-kigb.png)
 
@@ -22,7 +22,7 @@ joypad controlled movement and logging when pressing A, B, Start or Select.
 A single stage scrolling vertical platformer. Jump to the exit at the top of
 the screen to complete.
 
-<a href="/examples/platformer/web/" class="button">Launch Debug</a>
+<a href="/examples/platformer/web/" class="button">Launch debug</a>
 
 ![](/img/platformer-kigb.png)
 
