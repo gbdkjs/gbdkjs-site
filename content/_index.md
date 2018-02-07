@@ -39,13 +39,13 @@
 
 <section class="homepage-left">
   <div class="homepage-center">
-    <a href="/docs/getting-started" title="View examples"><img src="/img/examples.png" /></a>
+    <a href="/docs/example-projects" title="View examples"><img src="/img/examples.png" /></a>
   </div>
   <div class="homepage-center">
     <div class="homepage-content">
       <h2>Getting Started</h2>
       <p>Example projects to get started right away.</p>
-      <a class="button" href="/docs/getting-started">View examples</a>                  
+      <a class="button" href="/docs/example-projects">View examples</a>                  
     </div>
   </div>
 </section>
