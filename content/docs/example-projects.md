@@ -6,7 +6,7 @@ draft: false
 
 ## [Boilerplate Example](https://github.com/gbdkjs/gbdkjs-example-boilerplate)
 
-A simple example loading a scrolling backround image a single sprite with
+A simple example displaying a scrolling backround image, a single sprite with
 joypad controlled movement and logging when pressing A, B, Start or Select.
 
 <a href="/examples/boilerplate/web/" class="button">Launch Debug</a>
@@ -19,7 +19,7 @@ joypad controlled movement and logging when pressing A, B, Start or Select.
 
 ## [Platformer Example](https://github.com/gbdkjs/gbdkjs-example-platformer)
 
-A single stage scrolling vertical platformer, jump to the exit at the top of
+A single stage scrolling vertical platformer. Jump to the exit at the top of
 the screen to complete.
 
 <a href="/examples/platformer/web/" class="button">Launch Debug</a>
