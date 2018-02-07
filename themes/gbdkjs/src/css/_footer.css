@@ -4,11 +4,22 @@ footer {
   clear: both;
 }
 
-footer p {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+footer .container {
   max-width: 900px;
-  padding: 20px;
+  padding: 0px 20px;
   box-sizing: border-box;
   margin: 0px auto;
-  color: #333;
+}
+
+footer svg {
+  margin-right: 20px;
+  fill: #24226b;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover svg {
+  fill: #acb4c1;
 }
