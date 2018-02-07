@@ -7,6 +7,10 @@ draft: false
 The GBDK.js web environment gives you access to a number of tools for viewing 
 internal state and debugging your game.
 
+![](/img/debug-environment.png)
+
+<a href="/examples/boilerplate/web/" class="button">Launch Debug</a>
+
 ## Keyboard Controls
 
 The controls are currently set up to mimic the default keyboard controls in
@@ -38,11 +42,16 @@ screen and window buffers) and sprite memory. This allows you to see if you've
 loaded too much or too little graphics data or if you've loaded the data into
 the wrong location.
 
+## Registers
+
+A number of the GameBoy register values such as the screen and window positions 
+are displayed in decimal and binary formats. More registers will be added as
+we continue development.
+
 ## Logging to the Console
 
-The right hand side of the page contains a log for you to output debugging
-information from your game directly to the page. You will also be able to see
-this by opening the Javascript console in your browser.
+The console contains a log for you to output debugging information from your
+game directly to the page. You will also be able to see this by opening the Javascript console in your browser.
 
 To send logs to the console add code like the following to your game's functions.
 
@@ -56,8 +65,8 @@ or to log a value
 LOG("i=%d\n", i);
 ```
 
-notice that these commands both end with a `\n` newline character, without these
-the commands won't appear in the console.
+note that these commands both end with a `\n` newline character,  without these
+the output won't appear.
 
 The logging function is a C macro that only compiles into the web build and is
 not present in the GameBoy ROM.

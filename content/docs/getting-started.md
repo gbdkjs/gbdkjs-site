@@ -8,8 +8,8 @@ To get started with GBDK.js we've created a boilerplate example project that you
 can clone as a starting point for your own games.
 
 ```
-> git clone git@github.com:gbdkjs/gbdkjs-example-platformer.git
-> cd gbdkjs-example-platformer
+> git clone git@github.com:gbdkjs/gbdkjs-example-boilerplate.git
+> cd gbdkjs-example-boilerplate
 > npm install
 ```
 
@@ -22,7 +22,7 @@ You can now build this project as a GameBoy ROM file.
 
 You should see the example application open in your GameBoy emulator.
 
-![](/img/platformer-kigb.png)
+![](/img/boilerplate-kigb.png)
 
 ```
 > make web
@@ -45,9 +45,7 @@ directly as you'll get a cross origin error.
 If you have [ggbgfx](/docs/ggbgfx) installed you'll be able to modify the
 graphics files and rebuild the game with your own assets.
 
-Try editing the file `assets/platformer.png` and copy paste some of the
-platforms to new locations. Remember to keep the tiles on an 8x8 pixel grid,
-and don't add any platforms above the exit because it *will* break things.
+Try editing the file `assets/screen.png` and running the script `assets/build.sh`.
 
 ```
 > cd assets
@@ -78,3 +76,5 @@ The most important files in the boilerplate are the following
   containing your game's graphics data. As your game's graphics data increases
   you'll want to move these into separate files and in probably into other
   [banks](http://gbdk.sourceforge.net/doc/html/c0303.html).
+
+## [More examples](/docs/example-projects) 

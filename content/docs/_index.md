@@ -7,6 +7,7 @@ draft: false
 
 - [Installation](installation)
 - [Getting Started](getting-started)
+  - [Example Projects](example-projects)
 - [Graphics with GGBGFX](ggbgfx)
 - [Debug Environment](debug)
 - [API Reference](api)
