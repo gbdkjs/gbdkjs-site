@@ -41,3 +41,15 @@ A top down vertical shoot-em-up.
 ```
 > git clone git@github.com:gbdkjs/gbdkjs-example-shooter.git
 ```
+
+## [Adventure Example](https://github.com/gbdkjs/gbdkjs-example-adventure)
+
+A top down action adventure.
+
+<a href="/examples/adventure/web/" class="button">Launch debug</a>
+
+![](/img/adventure-kigb.png)
+
+```
+> git clone git@github.com:gbdkjs/gbdkjs-example-adventure.git
+```
