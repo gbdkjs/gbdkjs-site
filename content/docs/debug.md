@@ -1,5 +1,5 @@
 ---
-title: "Debug"
+title: "Debug Environment"
 date: 2018-01-28T14:14:44Z
 draft: false
 ---
@@ -71,9 +71,5 @@ the output won't appear.
 The logging function is a C macro that only compiles into the web build and is
 not present in the GameBoy ROM.
 
-
-
-
-
-
-
+## Next: [API Reference](/docs/api) 
+  

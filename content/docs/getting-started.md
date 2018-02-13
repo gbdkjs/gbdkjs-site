@@ -77,4 +77,4 @@ The most important files in the boilerplate are the following
   you'll want to move these into separate files and in probably into other
   [banks](http://gbdk.sourceforge.net/doc/html/c0303.html).
 
-## [More examples](/docs/example-projects) 
+## Next: [Example Projects](/docs/example-projects) 
