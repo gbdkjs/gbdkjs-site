@@ -45,35 +45,28 @@ the wrong location.
 ## Registers
 
 A number of the GameBoy register values such as the screen and window positions 
-are displayed in decimal and binary formats. More registers will be added as
-we continue development.
+are displayed in decimal and binary formats.
 
 ## Logging to the Console
 
-The console contains a log for you to output debugging information from your
-game directly to the page. You will also be able to see this by opening the Javascript console in your browser.
+You can perform logging from your game directly to the Javascript console in
+your browser.
 
-To send logs to the console add code like the following to your game's functions.
+To send output to the console, add the following to your game's code:
 
 ```
 LOG("Hello World\n");
 ```
 
-or to log a value
+or to log a value using a C format string:
 
 ```
+UBYTE i = 5;
 LOG("i=%d\n", i);
 ```
 
-note that these commands both end with a `\n` newline character,  without these
-the output won't appear.
+Note that these commands both end with a `\n` newline character, without these
+the output won't flush so nothing will appear in the console.
 
 The logging function is a C macro that only compiles into the web build and is
 not present in the GameBoy ROM.
-
-
-
-
-
-
-
