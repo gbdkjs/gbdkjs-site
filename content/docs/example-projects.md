@@ -53,3 +53,5 @@ A top down action adventure.
 ```
 > git clone git@github.com:gbdkjs/gbdkjs-example-adventure.git
 ```
+
+## Next: [Graphics with GGBGFX](/docs/ggbgfx) 

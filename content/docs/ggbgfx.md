@@ -92,3 +92,5 @@ Output the version number
 
 **—help, -h**  
 Output usage information
+
+## Next: [Debug Environment](/docs/debug) 

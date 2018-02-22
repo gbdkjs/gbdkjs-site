@@ -90,3 +90,5 @@ the GBDK Javascript implementation, the Emscripten bindings and a shell HTML fil
 If you've used Emscripten before this might be all you need but assuming you 
 haven't we suggest you now download an [example project](/docs/getting-started)
 to get started.
+
+## Next: [Getting Started](/docs/getting-started) 
